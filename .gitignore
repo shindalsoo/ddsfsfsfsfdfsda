@@ -1,0 +1,58 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore environment variables
+.env
+.venv/
+env/
+
+# Ignore caches and dependencies
+__pycache__/
+*.pyc
+node_modules/
+
+# zio.agent
+.Trash-*
+
+# SSH 홈(~ = /agent_skills)에 생기는 개인 파일 — 2026-10-06 배포부터
+.bash_history
+.bash_logout
+.bashrc
+.profile
+.gitconfig
+.viminfo
+.lesshst
+.wget-hsts
+.python_history
+.node_repl_history
+.ssh/
+.cache/
+.config/
+.local/
+.npm/
+.zed_server/
+.vscode-server/
+.cursor-server/
+# .claude/ 는 세션 파일만 숨기고, 함께 쓸 설정(settings.json·commands·agents·skills)은 남긴다
+.claude/*
+!.claude/settings.json
+!.claude/commands/
+!.claude/agents/
+!.claude/skills/
+
+# ── 플랫폼이 더한 줄(2026-10-07) — HOME 이 이 폴더라 도구 캐시가 쌓입니다 ──
+.vscode-server-insiders/
+.claude/
+.copilot/
+
+# ── 플랫폼이 더한 줄(2026-10-07) — HOME 이 이 폴더라 도구 캐시가 쌓입니다 ──
+.antigravity-ide-server/
+.gemini/
+
+# ── 담당자 자리는 홈이 곧 작업 폴더다 — 도구들이 여기에 쌓는다(zio 가 보탠 줄) ──
+.claude/backups/
+.claude/cache/
+.claude/sessions/
+.claude.json
+.sdk_manual/
